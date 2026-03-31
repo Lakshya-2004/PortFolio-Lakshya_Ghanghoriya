@@ -11,7 +11,7 @@ export const profileData = {
      leetcode: "https://leetcode.com/u/kumarirajm446/",
   },
   skills: ["React", "Java", "JavaScript", "Node.js", "MongoDB", "Express", "HTML/CSS", "Git", "Vite", "SQL", "UI/UX Designer"],
-  tools: ["Netlify", "Figma", "VS Code", "Git", "GitHub", "IntelliJ IDEA", "Canva", "PyCharm", "MySQL", "MongoDB Shell", "MongoDB Database Tools"],
+  tools: ["Netlify", "Figma", "VS Code", "Git", "GitHub", "IntelliJ IDEA", "Canva", "PyCharm", "MySQL", "MongoDB Shell", "MongoDB Database Tools", "Vercel"],
   about: "Third year CSE student at Madhav Institute of Technology and Science, Gwalior (CGPA: 8.4) with hands-on full stack development experience using React, Node.js, Express.js, MongoDB, Java, and UI/UX design. Contributed to projects as a UI/UX Designer and Frontend Developer, building responsive interfaces and solving complex problems. Completed 250+ LeetCode and 40+ HackerRank coding problems. Active member of the GFG Society and eager to apply technical skills in a real-world internship.",
 };
 
@@ -19,7 +19,7 @@ export const technicalSkills = {
   languages: ["Java", "Python", "C", "C++", "JavaScript", "SQL", "HTML"],
   frameworks: ["MERN Stack", "React", "Tailwind CSS", "Bootstrap", "Matplotlib", "NumPy", "Mongoose"],
   databases: ["MySQL", "MongoDB"],
-  tools: ["Netlify", "Figma", "VS Code", "Git", "GitHub", "IntelliJ IDEA", "Canva", "PyCharm", "MySQL", "MongoDB Shell", "MongoDB Database Tools"],
+  tools: ["Netlify", "Figma", "VS Code", "Git", "GitHub", "IntelliJ IDEA", "Canva", "PyCharm", "MySQL", "MongoDB Shell", "MongoDB Database Tools", "Vercel"],
 };
 
 export const projectsData = [
