@@ -12,7 +12,7 @@
   --text-light: #666;
   --bg-light: #f8f9fa;
   --white: #fff;
-  ---border-color: #e9ecef;
+  --border-color: #e9ecef; /* ✅ fixed (was ---border-color) */
 }
 
 html {
@@ -92,14 +92,13 @@ button:active {
   background: var(--primary-color);
   color: white;
 }
-  display: inline-flex;
-  border-radius: 4px;
-  color: var(--text-h);
-}
 
+/* Code block styling */
 code {
   font-size: 15px;
   line-height: 135%;
   padding: 4px 8px;
-  background: var(--code-bg);
+  background: #f1f3f5; /* fallback (since --code-bg was undefined) */
+  border-radius: 4px;
+  display: inline-block;
 }

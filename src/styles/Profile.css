@@ -55,7 +55,7 @@
 }
 
 /* ─── Header Card ────────────────────────────────────────────── */
-.profile-header {
+.profile-header{
   background: var(--surface);
   border-radius: var(--radius-md);
   padding: 2.75rem 2.5rem 2.25rem;
@@ -66,14 +66,14 @@
   overflow: hidden;
 }
 
-.profile-header:hover {
+.profile-header:hover{
   transform: translateY(-5px);
   box-shadow: var(--shadow-hover);
 }
 
 /* gradient top bar – matches section-heading border */
-.profile-header::before {
-  content: '';
+.profile-header::before{
+  content: "";
   position: absolute;
   inset: 0 0 auto 0;
   height: 4px;
