@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&family=DM+Serif+Display&display=swap');
+
+/* ─── Variables (mirrored from Projects CSS) ─────────────────── */
+:root {
+  --primary:      #667eea;
+  --primary-dark: #5a6fd6;
+  --accent:       #764ba2;
+  --primary-soft: #f0f2ff;
+  --surface:      #ffffff;
+  --surface-alt:  #f8f9fa;
+  --border:       #e9ecef;
+  --border-mid:   #dee2e6;
+  --text-1:       #333333;
+  --text-2:       #666666;
+  --text-3:       #999999;
+  --radius-sm:    8px;
+  --radius-md:    12px;
+  --radius-lg:    20px;
+  --shadow-sm:    0 5px 20px rgba(0,0,0,0.1);
+  --shadow-hover: 0 15px 40px rgba(102,126,234,0.2);
+  --transition:   0.3s ease;
+  --font-body:    'Sora', system-ui, sans-serif;
+  --font-display: 'DM Serif Display', Georgia, serif;
+  --gradient:     linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* ─── Page Wrapper ───────────────────────────────────────────── */
+.profile {
+  font-family: var(--font-body);
+  background: var(--surface-alt);
+  padding: 4rem 2rem;
+  min-height: 100vh;
+  color: var(--text-1);
+}
+
+/* ─── Container ──────────────────────────────────────────────── */
+.profile-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+/* ─── Page Title (matches .projects-container h1) ────────────── */
+.profile-container > .page-title {
+  font-size: 2.5rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ─── Header Card ────────────────────────────────────────────── */
+.profile-header {
+  background: var(--surface);
+  border-radius: var(--radius-md);
+  padding: 2.75rem 2.5rem 2.25rem;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition), box-shadow var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.profile-header:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+}
+
+/* gradient top bar – matches section-heading border */
+.profile-header::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 4px;
+  background: var(--gradient);
+}
+
+/* ─── Avatar ─────────────────────────────────────────────────── */
+.profile-avatar {
+  width: 200px;   /* changed from 130px */
+  height: 200px;  /* changed from 130px */
+  border-radius: 50%;
+  margin: 0 auto 1.5rem;
+  padding: 3px;
+  background: var(--gradient);
+  box-shadow: 0 10px 30px rgba(102,126,234,0.3);
+  overflow: hidden;
+}
+
+.avatar-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--surface);
+  display: block;
+}
+
+.avatar-icon {
+  font-size: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+/* ─── Name & Title ───────────────────────────────────────────── */
+.profile-name {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #333;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0 0 0.5rem;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+
+.profile-title {
+  font-size: 1.1rem;
+  color: var(--accent);
+  margin: 0;
+  font-weight: 500;
+}
+
+/* ─── Content Grid ───────────────────────────────────────────── */
+.profile-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 0;
+}
+
+/* ─── Shared Card (matches .project-card) ────────────────────── */
+.profile-bio,
+.profile-info,
+.profile-social,
+.profile-skills {
+  background: var(--surface);
+  border-radius: var(--radius-md);
+  padding: 2rem;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition), box-shadow var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-bio:hover,
+.profile-info:hover,
+.profile-social:hover,
+.profile-skills:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+}
+
+/* ─── Bio ────────────────────────────────────────────────────── */
+.profile-bio {
+  grid-column: 1 / -1;
+}
+
+.profile-bio h2 {
+  font-size: 1.8rem;
+  color: var(--primary);
+  margin: 0 0 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid var(--primary);
+}
+
+.profile-bio h3 {
+  font-size: 0.95rem;
+  color: var(--text-1);
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+}
+
+.profile-bio p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--text-2);
+  margin: 0 0 1rem;
+}
+
+.profile-bio p:last-child {
+  margin-bottom: 0;
+}
+
+/* ─── Info ───────────────────────────────────────────────────── */
+.profile-info {
+  gap: 1rem;
+  justify-content: center;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.info-label {
+  font-weight: 600;
+  color: var(--primary);
+  min-width: 100px;
+  flex-shrink: 0;
+}
+
+.info-item a {
+  color: var(--accent);
+  text-decoration: none;
+  word-break: break-all;
+  transition: color var(--transition);
+}
+
+.info-item a:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.info-item p {
+  color: var(--text-2);
+  margin: 0;
+}
+
+/* ─── Social ─────────────────────────────────────────────────── */
+.profile-social {
+  justify-content: center;
+}
+
+.profile-social h3 {
+  font-size: 1.3rem;
+  color: var(--primary);
+  margin: 0 0 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid var(--border);
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: auto;
+}
+
+/* matches .project-btn + .repo-btn exactly */
+.social-btn {
+  flex: 1;
+  padding: 0.7rem 1rem;
+  border: 2px solid var(--primary);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  color: var(--primary);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  transition: all var(--transition);
+  cursor: pointer;
+}
+
+.social-btn:hover {
+  background: var(--primary);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102,126,234,0.3);
+}
+
+/* ─── Skills ─────────────────────────────────────────────────── */
+.profile-skills {
+  grid-column: 1 / -1;
+}
+
+.profile-skills h3 {
+  font-size: 1.3rem;
+  color: var(--primary);
+  margin: 0 0 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid var(--border);
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+/* matches .tech-tag exactly */
+.skill-tag {
+  display: inline-block;
+  background: var(--border);
+  color: var(--primary);
+  padding: 0.4rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all var(--transition);
+  cursor: default;
+}
+
+.skill-tag:hover {
+  background: var(--primary);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102,126,234,0.3);
+}
+
+/* ─── Duration badge (re-usable, matches .project-duration) ──── */
+.duration-badge {
+  display: inline-block;
+  background: var(--gradient);
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* ─── Responsive ─────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .profile {
+    padding: 2rem 1rem;
+  }
+
+  .profile-name {
+    font-size: 2rem;
+  }
+
+  .profile-title {
+    font-size: 1.1rem;
+  }
+
+  .profile-content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .profile-bio,
+  .profile-skills {
+    grid-column: span 1;
+  }
+
+  .social-links {
+    flex-direction: column;
+  }
+
+  .social-btn {
+    width: 100%;
+  }
+}
