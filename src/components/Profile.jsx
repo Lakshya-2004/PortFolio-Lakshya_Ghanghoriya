@@ -46,7 +46,7 @@ function Profile() {
                                 rel="noopener noreferrer"
                                 className="social-btn"
                             >
-                                <FaGithub />
+                                <FaGithub /> : Git Hub
                             </a>
 
                             <a
@@ -55,7 +55,7 @@ function Profile() {
                                 rel="noopener noreferrer"
                                 className="social-btn"
                             >
-                                <FaLinkedin />
+                                <FaLinkedin /> : Linkedin
                             </a>
 
                             <a
@@ -64,7 +64,7 @@ function Profile() {
                                 rel="noopener noreferrer"
                                 className="social-btn"
                             >
-                                <SiLeetcode />
+                                <SiLeetcode /> : Leetcode
                             </a>
                         </div>
                     </div>
