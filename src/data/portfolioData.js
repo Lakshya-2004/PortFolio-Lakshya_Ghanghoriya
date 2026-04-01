@@ -53,6 +53,16 @@ export const projectsData = [
     repoUrl: "https://github.com/Lakshya-2004/URL_shortener.git",
     image: "🔗",
   },
+  {
+    id: 4,
+    title: "Lakshya: Portfolio",
+    description: "Developed Platform for Introduction of mine and to mine Skills in technical field",
+    technologies: ["React", "JavaScript",],
+    role: "UI/UX design, Frontend Developer, Backend Developer",
+    duration: "Mar 2026",
+    repoUrl: "https://github.com/Lakshya-2004/PortFolio-Lakshya_Ghanghoriya.git",
+    image: "🏢",
+  },
 ];
 
 export const miniProjectsData = [
