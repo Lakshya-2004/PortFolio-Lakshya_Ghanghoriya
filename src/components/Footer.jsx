@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import { profileData } from '../data/portfolioData';
 import '../styles/Footer.css';
 
@@ -11,16 +12,17 @@ function Footer() {
           <div className="footer-section">
             <h3>{profileData.name}</h3>
             <p>{profileData.title}</p>
-            
+
           </div>
+
 
           <div className="footer-section">
             <h4>Quick Links</h4>
             <ul className="footer-links">
-              <li><a href="#home">Home</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#resume">Resume</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><NavLink to="/">Home</NavLink></li>
+              <li><NavLink to="/projects">Projects</NavLink></li>
+              <li><NavLink to="/resume">Resume</NavLink></li>
+              <li><NavLink to="/contact">Contact</NavLink></li>
             </ul>
           </div>
 
