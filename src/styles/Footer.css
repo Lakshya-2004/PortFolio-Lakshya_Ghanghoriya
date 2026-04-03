@@ -1,6 +1,6 @@
 .footer {
-  background: #667eea;
-  color: white;
+  background: #45362C;
+  color: #A8977A;
   padding: 3rem 2rem 1rem;
   margin-top: 2rem;
 }
@@ -24,7 +24,7 @@
 }
 
 .footer-section p {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(168, 151, 122, 0.8);
   line-height: 1.6;
 }
 
@@ -36,13 +36,13 @@
 }
 
 .footer-links a {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(168, 151, 122, 0.8);
   text-decoration: none;
   transition: color 0.3s;
 }
 
 .footer-links a:hover {
-  color: white;
+  color: #A8977A;
   text-decoration: underline;
 }
 
@@ -75,6 +75,34 @@
 
 .footer-bottom p {
   margin: 0.25rem 0;
+}
+
+/* Light Mode Overrides */
+[data-theme="light"] .footer {
+  background: #667eea;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+[data-theme="light"] .footer-section h3,
+[data-theme="light"] .footer-section h4 {
+  color: #ffffff;
+}
+
+[data-theme="light"] .footer-section p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+[data-theme="light"] .footer-links a {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+[data-theme="light"] .footer-links a:hover {
+  color: #ffffff;
+}
+
+[data-theme="light"] .footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 @media (max-width: 768px) {

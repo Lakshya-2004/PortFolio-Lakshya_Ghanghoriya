@@ -10,9 +10,12 @@ function Profile() {
                     <div className="profile-avatar">
                         <img src="/Profilepic.jpeg" alt={profileData.name} className="avatar-image" />
                     </div>
+                   
                     <h1 className="profile-name">{profileData.name}</h1>
                     <p className="profile-title">{profileData.title}</p>
+                   
                 </div>
+                
 
                 <div className="profile-content">
                     <div className="profile-bio">
