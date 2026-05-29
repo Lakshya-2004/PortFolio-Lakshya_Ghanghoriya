@@ -8,7 +8,7 @@ export const profileData = {
   social: {
     github: "https://github.com/Lakshya-2004",
     linkedin: "https://linkedin.com/in/lakshya-ghanghoriya-5264223a3/",
-     leetcode: "https://leetcode.com/u/kumarirajm446/",
+    leetcode: "https://leetcode.com/u/kumarirajm446/",
   },
   skills: ["React", "Java", "JavaScript", "Node.js", "MongoDB", "Express", "HTML/CSS", "Git", "Vite", "SQL", "UI/UX Designer"],
   tools: ["Netlify", "Figma", "VS Code", "Git", "GitHub", "IntelliJ IDEA", "Canva", "PyCharm", "MySQL", "MongoDB Shell", "MongoDB Database Tools", "Vercel"],
@@ -129,6 +129,10 @@ export const resumeData = {
       name: "Full-Stack-Development + Java(DSA)",
       duration: "Dec 2024 - Jan 2026",
       fileUrl: "/Fsd.pdf",
+    }, {
+      name: "Deloitte Australia Technology Job Simulation on Forage",
+      duration: "May 29, 2026",
+      fileUrl:"/DCC.pdf",
     },
   ],
 };
