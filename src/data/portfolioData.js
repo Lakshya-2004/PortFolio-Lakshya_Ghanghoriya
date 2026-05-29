@@ -91,6 +91,16 @@ export const miniProjectsData = [
 export const resumeData = {
   experience: [
     {
+      company: "Deloitte-Australia",
+      position: "Job-Simulation",
+      duration: "2026-29th May",
+      description: "Technology Job Simulation",
+      details: [
+        "Completed a job simulation involving development and coding",
+        "Wrote a proposal for creating a dashboard"
+      ]
+    },
+    {
       company: "Real Time Problem Projects",
       position: "Project Developer",
       duration: "Oct 2025 - Dec 2025",
@@ -110,16 +120,7 @@ export const resumeData = {
         "Aerospace Club"
       ]
     },
-     {
-      company: "Deloitte-Australia",
-      position: "Job-Simulation",
-      duration: "2026-29th May",
-      description: "Technology Job Simulation",
-      details: [
-        "Completed a job simulation involving development and coding",
-        "Wrote a proposal for creating a dashboard"
-      ]
-    },
+     
   ],
   education: [
     {
