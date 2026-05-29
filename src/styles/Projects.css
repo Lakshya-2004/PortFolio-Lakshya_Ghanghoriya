@@ -1,33 +1,33 @@
 /* Theme Variables */
 :root,
 [data-theme="dark"] {
-  --bg-projects: #161711;
-  --card-bg-projects: #45362C;
-  --text-projects: #A8977A;
-  --border-projects: #A8977A;
-  --duration-from: #A8977A;
-  --duration-to: #45362C;
-  --role-color: #45362C;
-  --btn-bg: #45362C;
-  --btn-text: #A8977A;
-  --btn-border: #A8977A;
+  --bg-projects: #0f1419;
+  --card-bg-projects: #1a2332;
+  --text-projects: #FD802E;
+  --border-projects: #FD802E;
+  --duration-from: #FD802E;
+  --duration-to: #1a2332;
+  --role-color: #1a2332;
+  --btn-bg: #1a2332;
+  --btn-text: #FD802E;
+  --btn-border: #FD802E;
 }
 
 [data-theme="light"] {
-  --bg-projects: #f8f9fa;
+  --bg-projects: #f5f5f5;
   --card-bg-projects: #ffffff;
-  --text-projects: #333;
-  --border-projects: #667eea;
-  --duration-from: #667eea;
-  --duration-to: #764ba2;
-  --role-color: #764ba2;
+  --text-projects: #233D4C;
+  --border-projects: #FD802E;
+  --duration-from: #FD802E;
+  --duration-to: #FD802E;
+  --role-color: #233D4C;
   --btn-bg: #ffffff;
-  --btn-text: #667eea;
-  --btn-border: #667eea;
+  --btn-text: #FD802E;
+  --btn-border: #FD802E;
 }
 
 .projects {
-  background: #161711;
+  background: #0f1419;
   padding: 4rem 2rem;
   min-height: 100vh;
 }
@@ -39,14 +39,14 @@
 
 .projects-container h1 {
   font-size: 2.5rem;
-  color: #A8977A;
+  color: #FD802E;
   text-align: center;
   margin-bottom: 0.5rem;
 }
 
 .projects-subtitle {
   text-align: center;
-  color: #A8977A;
+  color: #FD802E;
   margin-bottom: 3rem;
   font-size: 1.1rem;
 }
@@ -61,10 +61,10 @@
 
 .section-heading {
   font-size: 1.8rem;
-  color: #A8977A;
+  color: #FD802E;
   margin-bottom: 2rem;
   padding-bottom: 1rem;
-  border-bottom: 3px solid #A8977A;
+  border-bottom: 3px solid #FD802E;
 }
 
 .projects-grid {
@@ -74,9 +74,9 @@
 }
 
 .project-card {
-  background: #45362C;
+  background: #233D4C;
   border-radius: 35px;
-  border-left: 5px solid #A8977A;
+  border-left: 5px solid #FD802E;
   padding: 2rem;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
@@ -113,18 +113,18 @@
 }
 
 .project-duration {
-  background: linear-gradient(135deg, #A8977A 0%, #45362C 100%);
+  background: linear-gradient(135deg, #FD802E 0%, #233D4C 100%);
   color: white;
   padding: 0.4rem 0.8rem;
   border-radius: 35px;
-  border-left: 3px solid #A8977A;
+  border-left: 3px solid #FD802E;
   font-size: 0.8rem;
   font-weight: 600;
   white-space: nowrap;
 }
 
 .project-role {
-  color: #45362C;
+  color: #233D4C;
   font-size: 0.95rem;
   margin-bottom: 0.5rem;
   font-weight: 500;
@@ -132,12 +132,12 @@
 
 .project-title {
   font-size: 1.5rem;
-  color: #A8977A;
+  color: #FD802E;
   margin-bottom: 0.5rem;
 }
 
 .project-description {
-  color: #A8977A;
+  color: #FD802E;
   margin-bottom: 1.5rem;
   flex-grow: 1;
   line-height: 1.6;
@@ -148,7 +148,7 @@
 }
 
 .project-tech h4 {
-  color: #A8977A;
+  color: #FD802E;
   margin-bottom: 0.5rem;
   font-size: 0.95rem;
 }
@@ -161,11 +161,11 @@
 
 .tech-tag {
   display: inline-block;
-  background: #45362C;
-  color: #A8977A;
+  background: #233D4C;
+  color: #FD802E;
   padding: 0.4rem 0.8rem;
   border-radius: 35px;
-  border-left: 3px solid #A8977A;
+  border-left: 3px solid #FD802E;
   font-size: 0.85rem;
   font-weight: 600;
 }
@@ -181,7 +181,7 @@
   padding: 0.7rem 1rem;
   border: none;
   border-radius: 35px;
-  border-left: 3px solid #A8977A;
+  border-left: 3px solid #FD802E;
   text-decoration: none;
   display: inline-block;
   text-align: center;
@@ -192,17 +192,17 @@
 }
 
 .repo-btn {
-  background: #45362C;
-  color: #A8977A;
-  border: 2px solid #A8977A;
+  background: #233D4C;
+  color: #FD802E;
+  border: 2px solid #FD802E;
   flex: 1;
   border-radius: 35px;
-  border-left: 3px solid #A8977A;
+  border-left: 3px solid #FD802E;
 }
 
 .repo-btn:hover {
-  background: #A8977A;
-  color: #161711;
+  background: #FD802E;
+  color: #0f1419;
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(168, 151, 122, 0.3);
 }
@@ -266,26 +266,26 @@
 [data-theme="light"] .section-heading,
 [data-theme="light"] .project-title,
 [data-theme="light"] .project-tech h4 {
-  color: #667eea;
+  color: #233D4C;
 }
 
 [data-theme="light"] .project-description,
 [data-theme="light"] .project-role {
-  color: #333;
+  color: #233D4C;
 }
 
 [data-theme="light"] .project-btn {
-  border-left-color: #667eea;
+  border-left-color: #FD802E;
 }
 
 /* Fix all left-border colors for light mode */
 [data-theme="light"] .project-card {
-  border-left-color: #667eea;
+  border-left-color: #FD802E;
 }
 
 /* Fix section heading bottom-border for light mode */
 [data-theme="light"] .section-heading {
-  border-bottom-color: #667eea;
+  border-bottom-color: #FD802E;
 }
 
 @media (max-width: 768px) {
