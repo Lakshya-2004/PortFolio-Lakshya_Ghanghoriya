@@ -110,6 +110,16 @@ export const resumeData = {
         "Aerospace Club"
       ]
     },
+     {
+      company: "Deloitte-Australia",
+      position: "Job-Simulation",
+      duration: "2026-29th May",
+      description: "Technology Job Simulation",
+      details: [
+        "Completed a job simulation involving development and coding",
+        "Wrote a proposal for creating a dashboard"
+      ]
+    },
   ],
   education: [
     {
