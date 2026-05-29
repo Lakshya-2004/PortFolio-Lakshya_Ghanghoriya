@@ -113,7 +113,7 @@ export const resumeData = {
     {
       company: "Campus Organizations",
       position: "Society Member & Contributor",
-      duration: "2024 - Present",
+      duration: "2024 - May-2026",
       description: "Actively involved in:",
       details: [
         "GFG's Campus",
