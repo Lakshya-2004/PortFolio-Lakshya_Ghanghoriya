@@ -58,7 +58,7 @@ export const projectsData = [
     technologies: ["React", "Express","RestApi","CloudinaryAPI","RazorPayAPI","MongoDB-Atlas","Payment-Gateway",],
     role: "UI/UX design, Frontend Developer, Backend Developer, Full-Stack Development",
     duration: "15 May-15 June 2026",
-    repoUrl: "pizza-delivery-client-five.vercel.app",
+    repoUrl: "https://pizza-delivery-client-five.vercel.app/",
     image: "🍕",
   },
   {
