@@ -77,32 +77,25 @@
   margin: 0.25rem 0;
 }
 
-/* Light Mode Overrides */
 [data-theme="light"] .footer {
-  background: #667eea;
-  color: rgba(255, 255, 255, 0.9);
+  background: linear-gradient(135deg, #FFF2E5, #FFE9D3);
+  color: #4D4A45;
 }
 
 [data-theme="light"] .footer-section h3,
 [data-theme="light"] .footer-section h4 {
-  color: #ffffff;
+  color: #FF8A3D;
 }
 
-[data-theme="light"] .footer-section p {
-  color: rgba(255, 255, 255, 0.8);
-}
-
-[data-theme="light"] .footer-links a {
-  color: rgba(255, 255, 255, 0.8);
+[data-theme="light"] .footer-section p,
+[data-theme="light"] .footer-links a,
+[data-theme="light"] .footer-social a,
+[data-theme="light"] .footer-bottom {
+  color: #73605A;
 }
 
 [data-theme="light"] .footer-links a:hover {
-  color: #ffffff;
-}
-
-[data-theme="light"] .footer-bottom {
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  color: rgba(255, 255, 255, 0.8);
+  color: #F08A44;
 }
 
 @media (max-width: 768px) {

@@ -179,20 +179,20 @@ html {
   z-index: 1;
 }
 
-/* Light Mode Toggle Button */
+/* Light Mode Toggle Button (distinct cyan) */
 [data-theme="light"] .theme-toggle-btn {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  border-color: #667eea;
-  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.25);
+  background: linear-gradient(135deg, #00B4D8 0%, #0077B6 100%);
+  border-color: #00B4D8;
+  box-shadow: 0 4px 15px rgba(0, 180, 216, 0.22);
 }
 
 [data-theme="light"] .theme-toggle-btn:hover {
-  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
-  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.45);
+  background: linear-gradient(135deg, #0077B6 0%, #00B4D8 100%);
+  box-shadow: 0 8px 25px rgba(0, 119, 182, 0.34);
 }
 
 [data-theme="light"] .theme-toggle-btn::before {
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.18);
 }
 
 /* Modern animations for toggle button */
@@ -216,11 +216,12 @@ html {
 
 [data-theme="dark"] .theme-toggle-btn {
   animation: glow 3s ease-in-out infinite;
+  box-shadow: 0 4px 15px rgba(0, 180, 216, 0.14);
 }
 
 [data-theme="light"] .theme-toggle-btn {
   animation: 3s glow ease-in-out infinite;
-  box-shadow: 0 4px 15px rgba(253, 128, 46, 0.25);
+  box-shadow: 0 4px 15px rgba(0, 180, 216, 0.22);
 }
 
 /* Light Mode Overrides */

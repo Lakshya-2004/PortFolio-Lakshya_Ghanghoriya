@@ -10,7 +10,7 @@ export const profileData = {
     linkedin: "https://linkedin.com/in/lakshya-ghanghoriya-5264223a3/",
     leetcode: "https://leetcode.com/u/kumarirajm446/",
   },
-  skills: ["React", "Java", "JavaScript", "Node.js", "MongoDB", "Express", "HTML/CSS", "Git", "Vite", "SQL", "UI/UX Designer"],
+  skills: ["React", "Java", "JavaScript", "Node.js", "MongoDB", "Express", "HTML/CSS", "Git", "Vite", "SQL", "UI/UX Designer","Computer Networking", "Data Analysis", "Data Modeling", "Data Structures", "Data Visualization Tools","Formal Communication", "Log Analysis", "Planning", "Software Development", "Spreadsheet Skills", "Web Security",],
   tools: ["Netlify", "Figma", "VS Code", "Git", "GitHub", "IntelliJ IDEA", "Canva", "PyCharm", "MySQL", "MongoDB Shell", "MongoDB Database Tools", "Vercel"],
   about: "Third year CSE student at Madhav Institute of Technology and Science, Gwalior (CGPA: 8.4) with hands-on full stack development experience using React, Node.js, Express.js, MongoDB, Java, and UI/UX design. Contributed to projects as a UI/UX Designer and Frontend Developer, building responsive interfaces and solving complex problems. Completed 250+ LeetCode and 40+ HackerRank coding problems. Active member of the GFG Society and eager to apply technical skills in a real-world internship.",
 };
@@ -25,6 +25,17 @@ export const technicalSkills = {
 export const projectsData = [
   {
     id: 1,
+    title: "Pizza Station",
+    description: "Developed Platform Under InternShip-Program",
+    featured: true,
+    technologies: ["React", "Express","RestApi","CloudinaryAPI","RazorPayAPI","MongoDB-Atlas","Payment-Gateway",],
+    role: "UI/UX design, Frontend Developer, Backend Developer, Full-Stack Development",
+    duration: "15 May-15 June 2026",
+    repoUrl: "pizza-delivery-client-five.vercel.app",
+    image: "🍕",
+  },
+  {
+    id: 2,
     title: "Beacon: Mental Health Platform",
     description: "Build UI components and integrated Firebase authentication & real-time Database. Implemented Chatbot functionality for smooth user interaction",
     technologies: ["React", "Firebase", "TypeScript", "MongoDB"],
@@ -34,9 +45,10 @@ export const projectsData = [
     image: "🧠",
   },
   {
-    id: 2,
+    id: 3,
     title: "Job-Finder: Job Searching Platform",
     description: "Developed job Listing pages, search filter, and responsive components. Integrated Firebase for job posting and user interactions.",
+    
     technologies: ["React", "TypeScript", "Firebase"],
     role: "UI/UX design, Frontend Developer",
     duration: "OCT-DEC 2025",
@@ -44,7 +56,7 @@ export const projectsData = [
     image: "💼",
   },
   {
-    id: 3,
+    id: 4,
     title: "Read-eZ: URL-Shortener Platform",
     description: "Developed Platform to shorten long URLs in readable length using REST API. Storing Data in JSON file.",
     technologies: ["React", "JavaScript", "Node.js", "REST API"],
@@ -54,15 +66,29 @@ export const projectsData = [
     image: "🔗",
   },
   {
-    id: 4,
+    id: 5,
+    title: "Flex-Forge",
+    description: "Developed Platform for Freelance Client for his workout Bussiness",
+    featured: true,
+    technologies: ["Html ,CSS ,Js", "Nodejs","JSON",],
+    role: "UI/UX design, Frontend Developer, Backend Developer",
+    duration: "May 2026",
+    repoUrl: "https://flexforge-0im9.onrender.com/",
+    image: "💪",
+  },
+  {
+    id: 6,
     title: "Lakshya: Portfolio",
     description: "Developed Platform for Introduction of mine and to mine Skills in technical field",
+    featured: true,
     technologies: ["React", "JavaScript",],
     role: "UI/UX design, Frontend Developer, Backend Developer",
     duration: "Mar 2026",
     repoUrl: "https://github.com/Lakshya-2004/PortFolio-Lakshya_Ghanghoriya.git",
     image: "🏢",
   },
+
+   
 ];
 
 export const miniProjectsData = [
