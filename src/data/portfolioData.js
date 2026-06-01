@@ -68,7 +68,7 @@ export const projectsData = [
     technologies: ["React", "Firebase", "TypeScript", "MongoDB"],
     role: "UI/UX design, Frontend Developer",
     duration: "OCT-DEC 2025",
-    repoUrl: "https://github.com/Shiva-005/The-Beacons-A-Clear-Path-in-Uncertain-times.git",
+    repoUrl: "https://github.com/Lakshya-2004/Mental_Health_Platform.git",
     image: "🧠",
   },
   {
@@ -79,7 +79,7 @@ export const projectsData = [
     technologies: ["React", "TypeScript", "Firebase"],
     role: "UI/UX design, Frontend Developer",
     duration: "OCT-DEC 2025",
-    repoUrl: "https://github.com/rashi125/job.git",
+    repoUrl: "https://github.com/Lakshya-2004/Job_Platform.git",
     image: "💼",
   },
   {
@@ -111,7 +111,7 @@ export const projectsData = [
     technologies: ["React", "JavaScript",],
     role: "UI/UX design, Frontend Developer, Backend Developer",
     duration: "Mar 2026",
-    repoUrl: "kshyaghanghoriyaportfolio.vercel.app/",
+    repoUrl: "lakshyaghanghoriyaportfolio.vercel.app/",
     image: "🏢",
   },
 
