@@ -111,7 +111,7 @@ export const projectsData = [
     technologies: ["React", "JavaScript",],
     role: "UI/UX design, Frontend Developer, Backend Developer",
     duration: "Mar 2026",
-    repoUrl: "https://github.com/Lakshya-2004/PortFolio-Lakshya_Ghanghoriya.git",
+    repoUrl: "kshyaghanghoriyaportfolio.vercel.app/",
     image: "🏢",
   },
 
