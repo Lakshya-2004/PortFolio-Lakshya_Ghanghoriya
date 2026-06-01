@@ -166,9 +166,14 @@
 
 .profile-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   margin-top: 0;
+}
+
+.profile-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
+  gap: 2rem;
 }
 
 .profile-card {
@@ -187,8 +192,38 @@
   box-shadow: var(--shadow-hover);
 }
 
-.profile-bio {
+.profile-bio,
+.profile-experience {
   grid-column: 1 / -1;
+}
+
+.profile-contact,
+.profile-connect,
+.profile-skills-block,
+.profile-tools-block {
+  min-height: 320px;
+}
+
+.profile-contact h3,
+.profile-connect h3,
+.profile-skills-block h3,
+.profile-tools-block h3 {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  color: var(--primary);
+}
+
+.profile-contact .info-item,
+.profile-connect .social-links,
+.profile-skills-block .skills-grid,
+.profile-tools-block .skills-grid {
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 900px) {
+  .profile-row {
+    grid-template-columns: 1fr;
+  }
 }
 
 .profile-bio h2 {
@@ -199,11 +234,12 @@
   border-bottom: 3px solid var(--accent);
 }
 
-.profile-bio h3 {
-  font-size: 0.95rem;
-  color: var(--text-1);
-  font-weight: 600;
-  margin: 0 0 0.5rem;
+.profile-card h3 {
+  font-size: 1.3rem;
+  color: var(--primary);
+  margin: 0 0 1rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 3px solid var(--accent);
 }
 
 .profile-bio p {
@@ -215,6 +251,48 @@
 
 .profile-bio p:last-child {
   margin-bottom: 0;
+}
+
+.profile-experience h2 {
+  margin-bottom: 1.2rem;
+  font-size: 1.6rem;
+  color: var(--primary);
+  padding-bottom: 1rem;
+  border-bottom: 3px solid var(--accent);
+}
+
+.experience-list {
+  display: grid;
+  gap: 1.2rem;
+}
+
+.experience-item {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: baseline;
+}
+
+.experience-header h3 {
+  font-size: 1.1rem;
+  color: var(--primary);
+  margin: 0;
+}
+
+.experience-date {
+  color: var(--text-2);
+  font-size: 0.95rem;
+}
+
+.experience-summary {
+  margin: 0;
+  color: var(--text-2);
+  line-height: 1.7;
 }
 
 .profile-info {

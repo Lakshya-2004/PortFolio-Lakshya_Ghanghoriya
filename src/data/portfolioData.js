@@ -11,22 +11,49 @@ export const profileData = {
     leetcode: "https://leetcode.com/u/kumarirajm446/",
   },
   skills: ["React", "Java", "JavaScript", "Node.js", "MongoDB", "Express", "HTML/CSS", "Git", "Vite", "SQL", "UI/UX Designer","Computer Networking", "Data Analysis", "Data Modeling", "Data Structures", "Data Visualization Tools","Formal Communication", "Log Analysis", "Planning", "Software Development", "Spreadsheet Skills", "Web Security",],
-  tools: ["Netlify", "Figma", "VS Code", "Git", "GitHub", "IntelliJ IDEA", "Canva", "PyCharm", "MySQL", "MongoDB Shell", "MongoDB Database Tools", "Vercel"],
+  tools: ["Netlify", "Figma", "VS Code", "Git", "GitHub", "IntelliJ IDEA", "Canva", "PyCharm", "MySQL", "MongoDB Shell", "MongoDB Database Tools", "Vercel","Render"],
   about: "Third year CSE student at Madhav Institute of Technology and Science, Gwalior (CGPA: 8.4) with hands-on full stack development experience using React, Node.js, Express.js, MongoDB, Java, and UI/UX design. Contributed to projects as a UI/UX Designer and Frontend Developer, building responsive interfaces and solving complex problems. Completed 250+ LeetCode and 40+ HackerRank coding problems. Active member of the GFG Society and eager to apply technical skills in a real-world internship.",
+  experience: [
+    {
+      role: "Post-trainee intern",
+      company:" Ethara AI",
+      date :"April 2026- June 2026",
+      summary:"Training and fine-tuning AI solutions for different IT organizations.",
+    },
+    {
+      role: "Full-Stack Intern",
+      company: "Pizza Station Intern Project",
+      date: "May 15 2026-June 15 2026",
+      summary: "Built responsive UI components and integrated payment flow using React and REST APIs.",
+    },
+    {
+      role: "Frontend Development, Backend Developer",
+      company: "Workout Gym Platform",
+      date: "May 2026 ",
+      summary: "Delivered a fully responsive website with Admin Page integration, featuring user data collection and JSON-based storage for easy administrative access and management.",
+    },
+    {
+      role: "UI/UX Designer ,Fronted-Development",
+      company: "Beacon Mental Health Platform Under College MentorShip",
+      date: "Oct 2025 – Dec 2025",
+      summary: "Designed user-friendly interfaces and guided the product through research-driven wireframes.",
+    },
+    
+  ],
 };
 
 export const technicalSkills = {
   languages: ["Java", "Python", "C", "C++", "JavaScript", "SQL", "HTML"],
   frameworks: ["MERN Stack", "React", "Tailwind CSS", "Bootstrap", "Matplotlib", "NumPy", "Mongoose"],
   databases: ["MySQL", "MongoDB"],
-  tools: ["Netlify", "Figma", "VS Code", "Git", "GitHub", "IntelliJ IDEA", "Canva", "PyCharm", "MySQL", "MongoDB Shell", "MongoDB Database Tools", "Vercel"],
+  tools: ["Netlify", "Figma", "VS Code", "Git", "GitHub", "IntelliJ IDEA", "Canva", "PyCharm", "MySQL", "MongoDB Shell", "MongoDB Database Tools", "Vercel" ,"Render"],
 };
 
 export const projectsData = [
   {
     id: 1,
     title: "Pizza Station",
-    description: "Developed Platform Under InternShip-Program",
+    description: "Designed and developed a full-featured web platform during an internship program.",
     featured: true,
     technologies: ["React", "Express","RestApi","CloudinaryAPI","RazorPayAPI","MongoDB-Atlas","Payment-Gateway",],
     role: "UI/UX design, Frontend Developer, Backend Developer, Full-Stack Development",
@@ -68,7 +95,7 @@ export const projectsData = [
   {
     id: 5,
     title: "Flex-Forge",
-    description: "Developed Platform for Freelance Client for his workout Bussiness",
+    description: "Designed and developed a custom web platform for a freelance client's workout and fitness business.",
     featured: true,
     technologies: ["Html ,CSS ,Js", "Nodejs","JSON",],
     role: "UI/UX design, Frontend Developer, Backend Developer",
@@ -79,7 +106,7 @@ export const projectsData = [
   {
     id: 6,
     title: "Lakshya: Portfolio",
-    description: "Developed Platform for Introduction of mine and to mine Skills in technical field",
+    description: "Designed and developed a responsive personal portfolio website to showcase my technical skills, projects, achievements, and professional experience in the technology domain.",
     featured: true,
     technologies: ["React", "JavaScript",],
     role: "UI/UX design, Frontend Developer, Backend Developer",
@@ -132,6 +159,7 @@ export const resumeData = {
       duration: "Oct 2025 - Dec 2025",
       description: "Worked on impactful real-world projects:",
       details: [
+        "Pizza Station - Real-Time Food Ordering Application Developed During Internship Program",
         "Beacon - Mental Health Platform",
         "Job-Finder - Job Seeking Platform"
       ]

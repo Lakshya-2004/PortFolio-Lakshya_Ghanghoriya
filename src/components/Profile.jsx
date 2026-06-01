@@ -41,56 +41,76 @@ function Profile() {
             <p>{profileData.about}</p>
           </div>
 
-          <div className="profile-card">
-            <h3>Contact</h3>
-            <div className="info-item">
-              <span className="info-label">Email</span>
-              <a href={`mailto:${profileData.email}`}>{profileData.email}</a>
-            </div>
-            <div className="info-item">
-              <span className="info-label">Phone</span>
-              <p>{profileData.phone}</p>
-            </div>
-            <div className="info-item">
-              <span className="info-label">Location</span>
-              <p>{profileData.location}</p>
-            </div>
-          </div>
-
-          <div className="profile-card">
-            <h3>Connect</h3>
-            <div className="social-links profile-social">
-              <a href={profileData.social.github} target="_blank" rel="noopener noreferrer" className="social-btn">
-                <FaGithub /> GitHub
-              </a>
-              <a href={profileData.social.linkedin} target="_blank" rel="noopener noreferrer" className="social-btn">
-                <FaLinkedin /> LinkedIn
-              </a>
-              <a href={profileData.social.leetcode} target="_blank" rel="noopener noreferrer" className="social-btn">
-                <SiLeetcode /> LeetCode
-              </a>
-            </div>
-          </div>
-
-          <div className="profile-card">
-            <h3>Skills</h3>
-            <div className="skills-grid">
-              {profileData.skills.map((skill, index) => (
-                <span key={index} className="skill-tag">
-                  {skill}
-                </span>
+          <div className="profile-card profile-experience">
+            <h2>Experience</h2>
+            <div className="experience-list">
+              {profileData.experience.map((item, index) => (
+                <div key={index} className="experience-item">
+                  <div className="experience-header">
+                    <h3>{item.role}</h3>
+                    <span className="experience-date">{item.date}</span>
+                  </div>
+                  <p>{item.company}</p>
+                  <p className="experience-summary">{item.summary}</p>
+                </div>
               ))}
             </div>
           </div>
 
-          <div className="profile-card">
-            <h3>Tools & Frameworks</h3>
-            <div className="skills-grid">
-              {technicalSkills.tools.map((tool, index) => (
-                <span key={index} className="skill-tag">
-                  {tool}
-                </span>
-              ))}
+          <div className="profile-row">
+            <div className="profile-card profile-contact">
+              <h3>Contact</h3>
+              <div className="info-item">
+                <span className="info-label">Email</span>
+                <a href={`mailto:${profileData.email}`}>{profileData.email}</a>
+              </div>
+              <div className="info-item">
+                <span className="info-label">Phone</span>
+                <p>{profileData.phone}</p>
+              </div>
+              <div className="info-item">
+                <span className="info-label">Location</span>
+                <p>{profileData.location}</p>
+              </div>
+            </div>
+
+            <div className="profile-card profile-connect">
+              <h3>Connect</h3>
+              <div className="social-links profile-social">
+                <a href={profileData.social.github} target="_blank" rel="noopener noreferrer" className="social-btn">
+                  <FaGithub /> GitHub
+                </a>
+                <a href={profileData.social.linkedin} target="_blank" rel="noopener noreferrer" className="social-btn">
+                  <FaLinkedin /> LinkedIn
+                </a>
+                <a href={profileData.social.leetcode} target="_blank" rel="noopener noreferrer" className="social-btn">
+                  <SiLeetcode /> LeetCode
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="profile-row">
+            <div className="profile-card profile-skills-block">
+              <h3>Skills</h3>
+              <div className="skills-grid">
+                {profileData.skills.map((skill, index) => (
+                  <span key={index} className="skill-tag">
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div className="profile-card profile-tools-block">
+              <h3>Tools & Frameworks</h3>
+              <div className="skills-grid">
+                {technicalSkills.tools.map((tool, index) => (
+                  <span key={index} className="skill-tag">
+                    {tool}
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
         </div>

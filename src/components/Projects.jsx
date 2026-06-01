@@ -31,7 +31,7 @@ function Projects() {
 
       <div className="project-links">
         <a href={project.repoUrl} target="_blank" rel="noopener noreferrer" className="project-btn repo-btn">
-          🔗 View 
+          🔗 View Repo
         </a>
       </div>
     </div>
@@ -70,7 +70,7 @@ function Projects() {
               </div>
               <div className="project-links">
                 <a href={fp.repoUrl} target="_blank" rel="noopener noreferrer" className="project-btn repo-btn">
-                  🔗 View
+                  🔗 Visit
                 </a>
               </div>
             </div>
