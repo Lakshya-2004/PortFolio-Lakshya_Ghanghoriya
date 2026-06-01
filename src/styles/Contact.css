@@ -1,3 +1,8 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
 :root,
 [data-theme="dark"] {
   --surface-alt: #0D2230;
@@ -6,6 +11,11 @@
   --primary: #FF8A3D;
   --accent: #23A6B7;
   --text-contact: #E9F2F7;
+
+  /* Added */
+  --border-color: #28465c;
+  --input-border: #36546b;
+  --input-bg: #0f2535;
 }
 
 [data-theme="light"] {
@@ -15,6 +25,17 @@
   --primary: #FF8A3D;
   --accent: #D37444;
   --text-contact: #23303C;
+
+  /* Added */
+  --border-color: #d8e2ec;
+  --input-border: #d8e2ec;
+  --input-bg: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 .contact {
@@ -27,6 +48,13 @@
 .contact-container {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.contact-container,
+.contact-content,
+.contact-info,
+.contact-form {
+  width: 100%;
 }
 
 .contact-container h1 {
@@ -128,7 +156,7 @@
 }
 
 .recipient-info {
-  background: rgba(35,166,183,0.08);
+  background: rgba(35, 166, 183, 0.08);
   padding: 1rem;
   border-radius: 35px;
   border-left: 4px solid var(--primary);
@@ -170,12 +198,6 @@
   box-shadow: 0 0 0 3px rgba(255, 138, 61, 0.12);
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
-  outline: none;
-  border-color: var(--primary);
-}
-
 .submit-btn {
   padding: 0.9rem 1.75rem;
   background: var(--primary);
@@ -192,7 +214,7 @@
 
 .submit-btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(35,166,183,0.24);
+  box-shadow: 0 8px 25px rgba(35, 166, 183, 0.24);
 }
 
 .submit-btn:disabled {
@@ -227,6 +249,7 @@
     opacity: 0;
     transform: translateY(-10px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -271,9 +294,21 @@
   background: var(--primary);
   color: #0D2230;
 }
+
 /* ==========================
    TABLET (<= 992px)
 ========================== */
+@media (max-width: 1200px) {
+  .contact-content {
+    gap: 2rem;
+  }
+
+  .contact-info,
+  .contact-form {
+    padding: 2rem;
+  }
+}
+
 @media (max-width: 992px) {
   .contact {
     padding: 3rem 1.5rem;
@@ -306,6 +341,10 @@
     font-size: 2rem;
   }
 
+  .contact-content {
+    grid-template-columns: 1fr;
+  }
+
   .contact-subtitle {
     font-size: 1rem;
     margin-bottom: 2rem;
@@ -320,6 +359,13 @@
   .contact-info h2,
   .contact-form h2 {
     font-size: 1.3rem;
+  }
+
+  .contact-item p,
+  .contact-item a,
+  .recipient-info p,
+  .recipient-info strong {
+    word-break: break-word;
   }
 
   .contact-item {

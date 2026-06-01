@@ -1,3 +1,8 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
 :root,
 [data-theme="dark"] {
   --surface-alt: #0D2230;
@@ -212,6 +217,12 @@
   font-size: 1.1rem;
 }
 
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 .education-list {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
@@ -454,7 +465,25 @@
 [data-theme="light"] .cert-link {
   background: rgba(35,166,183,0.08);
 }
+.cert-name,
+.company,
+.description,
+.details-list li {
+  word-break: break-word;
+}
+@media (max-width: 992px) {
+  .resume {
+    padding: 3rem 1.5rem;
+  }
 
+  .resume-container {
+    padding: 2.5rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+}
 @media (max-width: 760px) {
   .resume {
     padding: 3rem 1rem;
@@ -484,5 +513,35 @@
 
   .details-list {
     margin-left: 1rem;
+  }
+}
+@media (max-width: 480px) {
+  .resume-container {
+    padding: 1.25rem;
+    border-radius: 18px;
+  }
+
+  .resume-container h1 {
+    font-size: 2rem;
+  }
+
+  .section-title {
+    font-size: 1.25rem;
+  }
+
+  .skill-badge {
+    font-size: 0.8rem;
+    padding: 0.7rem;
+  }
+
+  .education-list,
+  .certifications-list {
+    grid-template-columns: 1fr;
+  }
+
+  .resume-btn,
+  .cta-button {
+    width: 100%;
+    text-align: center;
   }
 }

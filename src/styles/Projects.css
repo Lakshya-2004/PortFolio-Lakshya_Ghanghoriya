@@ -20,6 +20,15 @@
   --text-projects: #23303C;
   --border-projects: rgba(255, 138, 61, 0.2);
 }
+html,
+body {
+  overflow-x: hidden;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 .projects {
   background: var(--surface-alt);
@@ -269,4 +278,109 @@
 [data-theme="light"] .repo-btn {
   background: transparent;
   color: var(--text-projects);
+}
+
+@media (max-width: 992px) {
+  .projects {
+    padding: 3rem 1.5rem;
+  }
+
+  .featured-project-card,
+  .project-card {
+    padding: 1.75rem;
+  }
+
+  .projects-grid {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects {
+    padding: 2.5rem 1rem;
+  }
+
+  .projects-container h1 {
+    font-size: 2rem;
+  }
+
+  .projects-subtitle {
+    font-size: 1rem;
+  }
+
+  .section-heading {
+    font-size: 1.5rem;
+  }
+
+  .projects-intro {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-header {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .project-links {
+    flex-direction: column;
+  }
+
+  .repo-btn {
+    width: 100%;
+  }
+
+  .featured-project-card .project-title {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects {
+    padding: 2rem 0.75rem;
+  }
+
+  .featured-project-card,
+  .project-card {
+    padding: 1.25rem;
+    border-radius: 18px;
+  }
+
+  .projects-container h1 {
+    font-size: 1.75rem;
+  }
+
+  .section-heading {
+    font-size: 1.3rem;
+  }
+
+  .project-title {
+    font-size: 1.25rem;
+  }
+
+  .featured-project-card .project-title {
+    font-size: 1.4rem;
+  }
+
+  .project-description {
+    font-size: 0.95rem;
+  }
+
+  .tech-tags {
+    gap: 0.5rem;
+  }
+
+  .tech-tag {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.75rem;
+  }
+
+  .projects-pill {
+    width: 100%;
+    text-align: center;
+  }
 }

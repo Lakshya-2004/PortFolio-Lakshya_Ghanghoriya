@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&family=DM+Serif+Display&display=swap');
 
+html,
+body {
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 :root,
 [data-theme="dark"] {
   --primary: #FF8A3D;
@@ -425,7 +435,12 @@
   padding-bottom: 0.75rem;
   border-bottom: 2px solid var(--border);
 }
-
+.profile-tagline,
+.experience-summary,
+.info-item p,
+.info-item a {
+  word-break: break-word;
+}
 .skills-grid {
   display: flex;
   flex-wrap: wrap;
@@ -517,4 +532,38 @@
 [data-theme="light"] .skill-tag {
   background: rgba(255,138,61,0.12);
   color: var(--primary);
+}
+@media (max-width: 480px) {
+  .profile {
+    padding: 2rem 1rem;
+  }
+
+  .profile-header,
+  .profile-card {
+    padding: 1.5rem;
+  }
+
+  .profile-avatar {
+    width: 160px;
+    height: 160px;
+  }
+
+  .profile-name {
+    font-size: 2rem;
+  }
+
+  .profile-title {
+    font-size: 1rem;
+  }
+
+  .social-links {
+    flex-direction: column;
+  }
+
+  .social-btn {
+    width: 100%;
+    max-width: none;
+    min-width: 0;
+    justify-content: center;
+  }
 }
