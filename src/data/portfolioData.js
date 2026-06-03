@@ -12,7 +12,7 @@ export const profileData = {
   },
   skills: ["React", "Java", "JavaScript", "Node.js", "MongoDB", "Express", "HTML/CSS", "Git", "Vite", "SQL", "UI/UX Designer","Computer Networking", "Data Analysis", "Data Modeling", "Data Structures", "Data Visualization Tools","Formal Communication", "Log Analysis", "Planning", "Software Development", "Spreadsheet Skills", "Web Security",],
   tools: ["Netlify", "Figma", "VS Code", "Git", "GitHub", "IntelliJ IDEA", "Canva", "PyCharm", "MySQL", "MongoDB Shell", "MongoDB Database Tools", "Vercel","Render"],
-  about: "Third year CSE student at Madhav Institute of Technology and Science, Gwalior (CGPA: 8.4) with hands-on full stack development experience using React, Node.js, Express.js, MongoDB, Java, and UI/UX design. Contributed to projects as a UI/UX Designer and Frontend Developer, building responsive interfaces and solving complex problems. Completed 250+ LeetCode and 40+ HackerRank coding problems. Active member of the GFG Society and eager to apply technical skills in a real-world internship.",
+  about: "Third year CSE student at Madhav Institute of Technology and Science, Gwalior (CGPA: 8.4) with hands-on full stack development experience using React, Node.js, Express.js, MongoDB And on Hand on Java, and UI/UX design. Contributed to projects as a UI/UX Designer, Frontend Developer, Backend Developer, building responsive interfaces and solving complex problems. Completed 300+ LeetCode and 50+ HackerRank coding problems.Former member of the GFG Society and eager to apply technical skills in a real-world internship.",
   experience: [
     {
       role: "Post-trainee intern",
@@ -22,7 +22,7 @@ export const profileData = {
     },
     {
       role: "Full-Stack Intern",
-      company: "Pizza Station Intern Project",
+      company: "Infobyte Intern Project",
       date: "May 15 2026-June 15 2026",
       summary: "Built responsive UI components and integrated payment flow using React and REST APIs.",
     },
@@ -109,7 +109,7 @@ export const projectsData = [
     description: "Designed and developed a responsive personal portfolio website to showcase my technical skills, projects, achievements, and professional experience in the technology domain.",
     featured: true,
     technologies: ["React", "JavaScript",],
-    role: "UI/UX design, Frontend Developer, Backend Developer",
+    role: "UI/UX design, Frontend Developer",
     duration: "Mar 2026",
     repoUrl: "https://lakshyaghanghoriyaportfolio.vercel.app/",
     image: "🏢",

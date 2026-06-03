@@ -43,7 +43,7 @@ function Projects() {
         <div className="projects-intro">
           <div>
             <h1>My Projects</h1>
-            <p className="projects-subtitle">A curated selection of recent work with a featured highlight and easy access to main and mini projects.</p>
+            <p className="projects-subtitle">Accurated selection of recent work with a featured highlight and easy access to main and mini projects.</p>
           </div>
           <span className="projects-pill">Featured Work</span>
         </div>

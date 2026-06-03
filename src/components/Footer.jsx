@@ -41,8 +41,8 @@ function Footer() {
 
         <div className="footer-bottom">
           <h1>𝑳𝒂𝒌𝒔𝒉𝒚𝒂 𝑮𝒉𝒂𝒏𝒈𝒉𝒐𝒓𝒊𝒚𝒂</h1>
-          <p>&copy; {currentYear} {profileData.name}. All rights reserved.</p>
-          <p>Built with React & Vite</p>
+          <p>&copy; {currentYear}. All rights reserved.</p>
+         
         </div>
       </div>
     </footer>
